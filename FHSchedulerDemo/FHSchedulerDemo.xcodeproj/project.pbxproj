@@ -13,6 +13,11 @@
 		C94CD42B1F23C5DF0083E200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C94CD4291F23C5DF0083E200 /* Main.storyboard */; };
 		C94CD42D1F23C5E00083E200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C94CD42C1F23C5E00083E200 /* Assets.xcassets */; };
 		C94CD4301F23C5E00083E200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C94CD42E1F23C5E00083E200 /* LaunchScreen.storyboard */; };
+		C94CD43A1F23C6C80083E200 /* FHScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = C94CD4391F23C6C80083E200 /* FHScheduler.m */; };
+		C94CD4401F23CE510083E200 /* FHQueueScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = C94CD43F1F23CE510083E200 /* FHQueueScheduler.m */; };
+		C94CD4431F23D4B70083E200 /* FHSerialQueueScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = C94CD4421F23D4B70083E200 /* FHSerialQueueScheduler.m */; };
+		C94CD4461F23D4FB0083E200 /* FHConcurrentQueueScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = C94CD4451F23D4FB0083E200 /* FHConcurrentQueueScheduler.m */; };
+		C94CD4491F23D9650083E200 /* FHMainQueueScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = C94CD4481F23D9650083E200 /* FHMainQueueScheduler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		C94CD42C1F23C5E00083E200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C94CD42F1F23C5E00083E200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C94CD4311F23C5E00083E200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C94CD4381F23C6C80083E200 /* FHScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHScheduler.h; sourceTree = "<group>"; };
+		C94CD4391F23C6C80083E200 /* FHScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHScheduler.m; sourceTree = "<group>"; };
+		C94CD43E1F23CE510083E200 /* FHQueueScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHQueueScheduler.h; sourceTree = "<group>"; };
+		C94CD43F1F23CE510083E200 /* FHQueueScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHQueueScheduler.m; sourceTree = "<group>"; };
+		C94CD4411F23D4B70083E200 /* FHSerialQueueScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHSerialQueueScheduler.h; sourceTree = "<group>"; };
+		C94CD4421F23D4B70083E200 /* FHSerialQueueScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHSerialQueueScheduler.m; sourceTree = "<group>"; };
+		C94CD4441F23D4FB0083E200 /* FHConcurrentQueueScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHConcurrentQueueScheduler.h; sourceTree = "<group>"; };
+		C94CD4451F23D4FB0083E200 /* FHConcurrentQueueScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHConcurrentQueueScheduler.m; sourceTree = "<group>"; };
+		C94CD4471F23D9650083E200 /* FHMainQueueScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHMainQueueScheduler.h; sourceTree = "<group>"; };
+		C94CD4481F23D9650083E200 /* FHMainQueueScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHMainQueueScheduler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +57,7 @@
 		C94CD4141F23C5DF0083E200 = {
 			isa = PBXGroup;
 			children = (
+				C94CD4371F23C6620083E200 /* FHScheduler */,
 				C94CD41F1F23C5DF0083E200 /* FHSchedulerDemo */,
 				C94CD41E1F23C5DF0083E200 /* Products */,
 			);
@@ -77,6 +93,23 @@
 				C94CD4211F23C5DF0083E200 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C94CD4371F23C6620083E200 /* FHScheduler */ = {
+			isa = PBXGroup;
+			children = (
+				C94CD4381F23C6C80083E200 /* FHScheduler.h */,
+				C94CD4391F23C6C80083E200 /* FHScheduler.m */,
+				C94CD43E1F23CE510083E200 /* FHQueueScheduler.h */,
+				C94CD43F1F23CE510083E200 /* FHQueueScheduler.m */,
+				C94CD4471F23D9650083E200 /* FHMainQueueScheduler.h */,
+				C94CD4481F23D9650083E200 /* FHMainQueueScheduler.m */,
+				C94CD4411F23D4B70083E200 /* FHSerialQueueScheduler.h */,
+				C94CD4421F23D4B70083E200 /* FHSerialQueueScheduler.m */,
+				C94CD4441F23D4FB0083E200 /* FHConcurrentQueueScheduler.h */,
+				C94CD4451F23D4FB0083E200 /* FHConcurrentQueueScheduler.m */,
+			);
+			path = FHScheduler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +185,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C94CD4281F23C5DF0083E200 /* ViewController.m in Sources */,
+				C94CD4401F23CE510083E200 /* FHQueueScheduler.m in Sources */,
+				C94CD4491F23D9650083E200 /* FHMainQueueScheduler.m in Sources */,
+				C94CD43A1F23C6C80083E200 /* FHScheduler.m in Sources */,
 				C94CD4251F23C5DF0083E200 /* AppDelegate.m in Sources */,
+				C94CD4461F23D4FB0083E200 /* FHConcurrentQueueScheduler.m in Sources */,
+				C94CD4431F23D4B70083E200 /* FHSerialQueueScheduler.m in Sources */,
 				C94CD4221F23C5DF0083E200 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
