@@ -13,11 +13,11 @@
 		C94CD42B1F23C5DF0083E200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C94CD4291F23C5DF0083E200 /* Main.storyboard */; };
 		C94CD42D1F23C5E00083E200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C94CD42C1F23C5E00083E200 /* Assets.xcassets */; };
 		C94CD4301F23C5E00083E200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C94CD42E1F23C5E00083E200 /* LaunchScreen.storyboard */; };
-		C94CD43A1F23C6C80083E200 /* FHScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = C94CD4391F23C6C80083E200 /* FHScheduler.m */; };
-		C94CD4401F23CE510083E200 /* FHQueueScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = C94CD43F1F23CE510083E200 /* FHQueueScheduler.m */; };
-		C94CD4431F23D4B70083E200 /* FHSerialQueueScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = C94CD4421F23D4B70083E200 /* FHSerialQueueScheduler.m */; };
-		C94CD4461F23D4FB0083E200 /* FHConcurrentQueueScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = C94CD4451F23D4FB0083E200 /* FHConcurrentQueueScheduler.m */; };
-		C94CD4491F23D9650083E200 /* FHMainQueueScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = C94CD4481F23D9650083E200 /* FHMainQueueScheduler.m */; };
+		C94CD4551F248EF70083E200 /* SKConcurrentQueueScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = C94CD44C1F248EF70083E200 /* SKConcurrentQueueScheduler.m */; };
+		C94CD4561F248EF70083E200 /* SKMainQueueScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = C94CD44E1F248EF70083E200 /* SKMainQueueScheduler.m */; };
+		C94CD4571F248EF70083E200 /* SKQueueScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = C94CD4501F248EF70083E200 /* SKQueueScheduler.m */; };
+		C94CD4581F248EF70083E200 /* SKScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = C94CD4521F248EF70083E200 /* SKScheduler.m */; };
+		C94CD4591F248EF70083E200 /* SKSerialQueueScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = C94CD4541F248EF70083E200 /* SKSerialQueueScheduler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,16 +31,16 @@
 		C94CD42C1F23C5E00083E200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C94CD42F1F23C5E00083E200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C94CD4311F23C5E00083E200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C94CD4381F23C6C80083E200 /* FHScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHScheduler.h; sourceTree = "<group>"; };
-		C94CD4391F23C6C80083E200 /* FHScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHScheduler.m; sourceTree = "<group>"; };
-		C94CD43E1F23CE510083E200 /* FHQueueScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHQueueScheduler.h; sourceTree = "<group>"; };
-		C94CD43F1F23CE510083E200 /* FHQueueScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHQueueScheduler.m; sourceTree = "<group>"; };
-		C94CD4411F23D4B70083E200 /* FHSerialQueueScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHSerialQueueScheduler.h; sourceTree = "<group>"; };
-		C94CD4421F23D4B70083E200 /* FHSerialQueueScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHSerialQueueScheduler.m; sourceTree = "<group>"; };
-		C94CD4441F23D4FB0083E200 /* FHConcurrentQueueScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHConcurrentQueueScheduler.h; sourceTree = "<group>"; };
-		C94CD4451F23D4FB0083E200 /* FHConcurrentQueueScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHConcurrentQueueScheduler.m; sourceTree = "<group>"; };
-		C94CD4471F23D9650083E200 /* FHMainQueueScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FHMainQueueScheduler.h; sourceTree = "<group>"; };
-		C94CD4481F23D9650083E200 /* FHMainQueueScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FHMainQueueScheduler.m; sourceTree = "<group>"; };
+		C94CD44B1F248EF70083E200 /* SKConcurrentQueueScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKConcurrentQueueScheduler.h; sourceTree = "<group>"; };
+		C94CD44C1F248EF70083E200 /* SKConcurrentQueueScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKConcurrentQueueScheduler.m; sourceTree = "<group>"; };
+		C94CD44D1F248EF70083E200 /* SKMainQueueScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKMainQueueScheduler.h; sourceTree = "<group>"; };
+		C94CD44E1F248EF70083E200 /* SKMainQueueScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMainQueueScheduler.m; sourceTree = "<group>"; };
+		C94CD44F1F248EF70083E200 /* SKQueueScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKQueueScheduler.h; sourceTree = "<group>"; };
+		C94CD4501F248EF70083E200 /* SKQueueScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKQueueScheduler.m; sourceTree = "<group>"; };
+		C94CD4511F248EF70083E200 /* SKScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKScheduler.h; sourceTree = "<group>"; };
+		C94CD4521F248EF70083E200 /* SKScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKScheduler.m; sourceTree = "<group>"; };
+		C94CD4531F248EF70083E200 /* SKSerialQueueScheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSerialQueueScheduler.h; sourceTree = "<group>"; };
+		C94CD4541F248EF70083E200 /* SKSerialQueueScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSerialQueueScheduler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		C94CD4141F23C5DF0083E200 = {
 			isa = PBXGroup;
 			children = (
-				C94CD4371F23C6620083E200 /* FHScheduler */,
+				C94CD44A1F248EF70083E200 /* SKScheduler */,
 				C94CD41F1F23C5DF0083E200 /* FHSchedulerDemo */,
 				C94CD41E1F23C5DF0083E200 /* Products */,
 			);
@@ -95,21 +95,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C94CD4371F23C6620083E200 /* FHScheduler */ = {
+		C94CD44A1F248EF70083E200 /* SKScheduler */ = {
 			isa = PBXGroup;
 			children = (
-				C94CD4381F23C6C80083E200 /* FHScheduler.h */,
-				C94CD4391F23C6C80083E200 /* FHScheduler.m */,
-				C94CD43E1F23CE510083E200 /* FHQueueScheduler.h */,
-				C94CD43F1F23CE510083E200 /* FHQueueScheduler.m */,
-				C94CD4471F23D9650083E200 /* FHMainQueueScheduler.h */,
-				C94CD4481F23D9650083E200 /* FHMainQueueScheduler.m */,
-				C94CD4411F23D4B70083E200 /* FHSerialQueueScheduler.h */,
-				C94CD4421F23D4B70083E200 /* FHSerialQueueScheduler.m */,
-				C94CD4441F23D4FB0083E200 /* FHConcurrentQueueScheduler.h */,
-				C94CD4451F23D4FB0083E200 /* FHConcurrentQueueScheduler.m */,
+				C94CD44B1F248EF70083E200 /* SKConcurrentQueueScheduler.h */,
+				C94CD44C1F248EF70083E200 /* SKConcurrentQueueScheduler.m */,
+				C94CD44D1F248EF70083E200 /* SKMainQueueScheduler.h */,
+				C94CD44E1F248EF70083E200 /* SKMainQueueScheduler.m */,
+				C94CD44F1F248EF70083E200 /* SKQueueScheduler.h */,
+				C94CD4501F248EF70083E200 /* SKQueueScheduler.m */,
+				C94CD4511F248EF70083E200 /* SKScheduler.h */,
+				C94CD4521F248EF70083E200 /* SKScheduler.m */,
+				C94CD4531F248EF70083E200 /* SKSerialQueueScheduler.h */,
+				C94CD4541F248EF70083E200 /* SKSerialQueueScheduler.m */,
 			);
-			path = FHScheduler;
+			path = SKScheduler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,14 +184,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C94CD4551F248EF70083E200 /* SKConcurrentQueueScheduler.m in Sources */,
+				C94CD4561F248EF70083E200 /* SKMainQueueScheduler.m in Sources */,
 				C94CD4281F23C5DF0083E200 /* ViewController.m in Sources */,
-				C94CD4401F23CE510083E200 /* FHQueueScheduler.m in Sources */,
-				C94CD4491F23D9650083E200 /* FHMainQueueScheduler.m in Sources */,
-				C94CD43A1F23C6C80083E200 /* FHScheduler.m in Sources */,
 				C94CD4251F23C5DF0083E200 /* AppDelegate.m in Sources */,
-				C94CD4461F23D4FB0083E200 /* FHConcurrentQueueScheduler.m in Sources */,
-				C94CD4431F23D4B70083E200 /* FHSerialQueueScheduler.m in Sources */,
 				C94CD4221F23C5DF0083E200 /* main.m in Sources */,
+				C94CD4591F248EF70083E200 /* SKSerialQueueScheduler.m in Sources */,
+				C94CD4581F248EF70083E200 /* SKScheduler.m in Sources */,
+				C94CD4571F248EF70083E200 /* SKQueueScheduler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +350,7 @@
 				C94CD4361F23C5E00083E200 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

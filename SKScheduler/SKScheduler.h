@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FHScheduler : NSObject
+@interface SKScheduler : NSObject
 
 + (instancetype)mainThreadScheduler;
 

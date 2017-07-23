@@ -6,9 +6,9 @@
 //  Copyright © 2017年 GodL. All rights reserved.
 //
 
-#import "FHScheduler.h"
+#import "SKScheduler.h"
 
-@interface FHQueueScheduler : FHScheduler
+@interface SKQueueScheduler : SKScheduler
 
 @property (nonatomic,strong,readonly) dispatch_queue_t queue;
 

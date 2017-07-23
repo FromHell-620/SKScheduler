@@ -6,39 +6,39 @@
 //  Copyright © 2017年 GodL. All rights reserved.
 //
 
-#import "FHScheduler.h"
-#import "FHMainQueueScheduler.h"
-#import "FHSerialQueueScheduler.h"
-#import "FHConcurrentQueueScheduler.h"
+#import "SKScheduler.h"
+#import "SKMainQueueScheduler.h"
+#import "SKSerialQueueScheduler.h"
+#import "SKConcurrentQueueScheduler.h"
 
-@implementation FHScheduler
+@implementation SKScheduler
 
-FOUNDATION_STATIC_INLINE FHScheduler *FHSerialQosScheduler(NSQualityOfService qos) {
-    static NSMutableDictionary<NSNumber *,FHScheduler *> *schedulerPool = nil;
+FOUNDATION_STATIC_INLINE SKScheduler *FHSerialQosScheduler(NSQualityOfService qos) {
+    static NSMutableDictionary<NSNumber *,SKScheduler *> *schedulerPool = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         schedulerPool = [NSMutableDictionary dictionary];
     });
-    FHScheduler *scheduler = [schedulerPool objectForKey:@(qos)];
+    SKScheduler *scheduler = [schedulerPool objectForKey:@(qos)];
     if (!scheduler) {
         @synchronized (schedulerPool) {
-            scheduler = [[FHSerialQueueScheduler alloc] initWithQos:qos];
+            scheduler = [[SKSerialQueueScheduler alloc] initWithQos:qos];
             [schedulerPool setObject:scheduler forKey:@(qos)];
         }
     }
     return scheduler;
 }
 
-FOUNDATION_STATIC_INLINE FHScheduler *FHConcurrentQosScheduler(NSQualityOfService qos) {
-    static NSMutableDictionary<NSNumber *,FHScheduler *> *schedulerPool = nil;
+FOUNDATION_STATIC_INLINE SKScheduler *FHConcurrentQosScheduler(NSQualityOfService qos) {
+    static NSMutableDictionary<NSNumber *,SKScheduler *> *schedulerPool = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         schedulerPool = [NSMutableDictionary dictionary];
     });
-    FHScheduler *scheduler = [schedulerPool objectForKey:@(qos)];
+    SKScheduler *scheduler = [schedulerPool objectForKey:@(qos)];
     if (!scheduler) {
         @synchronized (schedulerPool) {
-            scheduler = [[FHConcurrentQueueScheduler alloc] initWithQos:qos];
+            scheduler = [[SKConcurrentQueueScheduler alloc] initWithQos:qos];
             [schedulerPool setObject:scheduler forKey:@(qos)];
         }
     }
@@ -46,10 +46,10 @@ FOUNDATION_STATIC_INLINE FHScheduler *FHConcurrentQosScheduler(NSQualityOfServic
 }
 
 + (instancetype)mainThreadScheduler {
-    static FHMainQueueScheduler *main = nil;
+    static SKMainQueueScheduler *main = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        main = [[FHMainQueueScheduler alloc] initWithQueue:nil];
+        main = [[SKMainQueueScheduler alloc] initWithQueue:nil];
     });
     return main;
 }

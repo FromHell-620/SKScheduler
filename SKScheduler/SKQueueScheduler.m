@@ -6,9 +6,9 @@
 //  Copyright © 2017年 GodL. All rights reserved.
 //
 
-#import "FHQueueScheduler.h"
+#import "SKQueueScheduler.h"
 
-@implementation FHQueueScheduler
+@implementation SKQueueScheduler
 
 dispatch_qos_class_t FHQueueQosWithQuality(NSQualityOfService qos) {
     switch (qos) {
